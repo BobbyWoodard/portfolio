@@ -35,7 +35,7 @@ const projects = [
     name: '2D Game Development',
     category: 'Game Development',
     description:
-      'Developed multiple 2D games, including a grid-based strategy game with AI and a fast-paced hack-and-slash featuring adaptive enemy behavior.',
+      'Developed multiple 2D games, including a grid-based strategy game with pathfinding and a fast-paced hack-and-slash featuring adaptive enemy behavior.',
     technologies: ['Godot', 'GDScript', 'A* Pathfinding'],
     color: 'beige',
   },
@@ -234,7 +234,7 @@ function Projects() {
     <section className="content-section projects-section" id="projects">
       <div className="section-container">
         <SectionHeading
-          eyebrow="SELECTED WORK"
+          eyebrow="PROJECTS"
           title="Things I've built."
           description="A collection of projects I've worked on, technologies I've explored, and problems I've enjoyed solving."
         />
@@ -342,6 +342,20 @@ function Experience() {
               </p>
             </div>
           </article>
+
+          <article className="timeline-item">
+            <div className="timeline-date">SEP 2026 — PRESENT</div>
+            <div className="timeline-content">
+              <h3>Chartwells Dining</h3>
+              <span className="timeline-role">Food Service Employee</span>
+              <p>
+                Prepared and served food in a fast-paced campus dining environment, 
+                assisting with meal preparation, customer service, and cash register operations. 
+                Maintained cleanliness and organization while transporting food, supplies, and 
+                equipment to support daily dining operations.
+              </p>
+            </div>
+          </article>
         </div>
 
         <div className="education-block">
@@ -371,9 +385,13 @@ function Resume() {
           </p>
         </div>
 
-        <a href={`${import.meta.env.BASE_URL}resume.pdf`}
-           className="button-primary" target="_blank" rel="noreferrer">
-          View my resume <Download size={17} />
+        <a
+          href={`${import.meta.env.BASE_URL}resume.pdf`}
+          download="Bobby_Woodard_Resume.pdf"
+          className="resume-button"
+        >
+          <Download size={18} />
+          Download My Resume
         </a>
       </div>
     </section>
