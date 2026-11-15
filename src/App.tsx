@@ -386,6 +386,8 @@ function Contact() {
       <div className="section-container">
         <SectionHeading
           eyebrow="GET IN TOUCH"
+          title=""
+          description=''
         />
 
         <a className="contact-email" href="mailto:bobbywoodard11@gmail.com">
